@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault - Login & Sign Up</title>
+    <link rel="stylesheet" href="/stylesheets/styleslogin.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">🎮 GameVault</a>
+            <a href="/" class="back-btn">← Back to Home</a>
+        </div>
+    </nav>
+    <!-- Flash Message -->
+     <% if (success.length>0) { %>
+        <div class="gamevault-message success">
+            <span class="msg-icon">✅</span>
+            <span class="msg-text"><%= success %></span>
+            <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+        </div>
+    <% } %>
+
+    <% if (error.length>0) { %>
+        <div class="gamevault-message error">
+            <span class="msg-icon">⚠️</span>
+            <span class="msg-text"><%= error %></span>
+            <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+        </div>
+    <% } %>
+
+    <!-- Main Authentication Container -->
+    <div class="auth-container">
+        <!-- Sign Up Section (Left) -->
+        <div class="signup-section">
+            <div class="floating-icons">
+                <div class="floating-icon">🎮</div>
+                <div class="floating-icon">⌨️</div>
+                <div class="floating-icon">🖱️</div>
+            </div>
+            
+            <form class="auth-form" id="signupForm" action="/users/register" method="POST">
+                <div class="form-header">
+                    <h2>Join GameVault</h2>
+                    <p>Create your gaming account and level up your setup</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Full Name</label>
+                    <input type="text" id="signupFullName" name="fullname" class="form-input" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group" style="position: relative;">
+                    <label for="signupMobile">Mobile no.</label>
+                    <input type="text" id="signupMobile" name="contact" class="form-input" placeholder="123-456-7890" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" name="email" class="form-input" placeholder="gamer@example.com" required>
+                </div>
+
+
+                <div class="form-group" style="position: relative;">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" class="form-input" placeholder="Create a strong password" required>
+                    <button type="button" class="password-toggle" onclick="togglePassword('signupPassword')">👁️</button>
+                </div>
+
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Create Gaming Account</span>
+                </button>
+
+                <div class="form-footer">
+                    Already have an account? <a href="#" onclick="focusLogin()">Sign in here</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Login Section (Right) -->
+        <div class="login-section">
+            <div class="floating-icons">
+                <div class="floating-icon">🎧</div>
+                <div class="floating-icon">🖥️</div>
+                <div class="floating-icon">🪑</div>
+            </div>
+            
+            <form class="auth-form" id="loginForm" action="/users/login" method="POST">
+                <div class="form-header">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to access your gaming gear collection</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group" style="position: relative;">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" class="form-input" placeholder="Enter your password" required>
+                    <button type="button" class="password-toggle" onclick="togglePassword('loginPassword')">👁️</button>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Keep me signed in</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Sign In to GameVault</span>
+                </button>
+
+                <div class="form-footer">
+                    New to GameVault? <a href="#" onclick="focusSignup()">Create an account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/javascripts/jsoflogin.js"></script>
+
+</body>
+</html>

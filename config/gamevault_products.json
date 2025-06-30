@@ -1,0 +1,452 @@
+[
+  {
+    "name": "HyperX Cloud Alpha",
+    "brand": "HyperX",
+    "category": "Headset",
+    "price": 12444,
+    "description": "Wireless connectivity and fast response for console & PC gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344046/HyperX_Cloud_Alpha_k0mqef.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "SteelSeries Arctis 7",
+    "brand": "SteelSeries",
+    "category": "Headset",
+    "price": 14690,
+    "description": "Wireless connectivity and fast response for console & PC gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344045/SteelSeries_Arctis_7_uiwerw.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Corsair HS60 Pro",
+    "brand": "Corsair",
+    "category": "Headset",
+    "price": 9108,
+    "description": "Wireless connectivity and fast response for console & PC gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344044/Corsair_HS60_Pro_o38gqq.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Razer BlackShark V2",
+    "brand": "Razer",
+    "category": "Headset",
+    "price": 6168,
+    "description": "Sleek form with anti-ghosting keys and mechanical switch feel.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344043/Razer_BlackShark_V2_gyap5g.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Logitech G733",
+    "brand": "Logitech",
+    "category": "Headset",
+    "price": 8592,
+    "description": "High DPI optical sensor and programmable buttons for fast gameplay.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344043/Logitech_G733_xglbqt.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "JBL Quantum 800",
+    "brand": "JBL",
+    "category": "Headset",
+    "price": 14563,
+    "description": "High refresh rate and low latency for smooth competitive gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344038/JBL_Quantum_800_vpwak9.png",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Sony INZONE H3",
+    "brand": "Sony",
+    "category": "Headset",
+    "price": 7267,
+    "description": "Ergonomic design with lumbar support for long comfortable sessions.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344042/Sony_INZONE_H3_fpv7n6.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Redgear Cloak Wired",
+    "brand": "Redgear",
+    "category": "Headset",
+    "price": 10453,
+    "description": "High refresh rate and low latency for smooth competitive gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344041/Redgear_Cloak_Wired_myzhj2.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "EKSA E900",
+    "brand": "EKSA",
+    "category": "Headset",
+    "price": 11172,
+    "description": "Premium audio drivers for immersive surround sound gaming experience.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344040/EKSA_E900_zt1t7x.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Boat Immortal IM1000D",
+    "brand": "Boat",
+    "category": "Headset",
+    "price": 9019,
+    "description": "High DPI optical sensor and programmable buttons for fast gameplay.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344040/Boat_Immortal_IM1000D_mjnws9.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Sony DualSense Wireless",
+    "brand": "Sony",
+    "category": "Controller",
+    "price": 6428,
+    "description": "Sleek form with anti-ghosting keys and mechanical switch feel.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344039/Sony_DualSense_Wireless_scnigz.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Xbox Core Wireless",
+    "brand": "Microsoft",
+    "category": "Controller",
+    "price": 12053,
+    "description": "Premium audio drivers for immersive surround sound gaming experience.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344039/Xbox_Core_Wireless_g4ifaw.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "PowerA Enhanced Wired",
+    "brand": "PowerA",
+    "category": "Controller",
+    "price": 10095,
+    "description": "Ergonomic design with lumbar support for long comfortable sessions.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344037/PowerA_Enhanced_Wired_mhtk6k.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "8BitDo Pro 2",
+    "brand": "8BitDo",
+    "category": "Controller",
+    "price": 7504,
+    "description": "Smooth tracking with adjustable DPI and vibrant RGB effects.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344036/8BitDo_Pro_2_kom0s0.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Razer Wolverine V2",
+    "brand": "Razer",
+    "category": "Controller",
+    "price": 11356,
+    "description": "Smooth tracking with adjustable DPI and vibrant RGB effects.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344035/Razer_Wolverine_V2_yc0oub.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Scuf Reflex Pro",
+    "brand": "Scuf",
+    "category": "Controller",
+    "price": 7189,
+    "description": "High refresh rate and low latency for smooth competitive gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344035/Scuf_Reflex_Pro_yrczl0.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Logitech F310",
+    "brand": "Logitech",
+    "category": "Controller",
+    "price": 14559,
+    "description": "Customizable buttons and ergonomic grip for precise in-game control.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344035/Scuf_Reflex_Pro_yrczl0.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Nintendo Switch Pro",
+    "brand": "Nintendo",
+    "category": "Controller",
+    "price": 8526,
+    "description": "High DPI optical sensor and programmable buttons for fast gameplay.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344033/Nintendo_Switch_Pro_ekzlcr.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Redgear Pro Series",
+    "brand": "Redgear",
+    "category": "Controller",
+    "price": 13197,
+    "description": "Premium audio drivers for immersive surround sound gaming experience.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344032/Redgear_Pro_Series_hy1lvn.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Cosmic Byte Wired Controller",
+    "brand": "Cosmic Byte",
+    "category": "Controller",
+    "price": 2513,
+    "description": "Ergonomic design with lumbar support for long comfortable sessions.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344032/Cosmic_Byte_Wired_Controller_yz15y9.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Razer Huntsman Mini",
+    "brand": "Razer",
+    "category": "Keyboard",
+    "price": 6631,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344032/Razer_Huntsman_Mini_ynhqrh.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Corsair K95 RGB Platinum",
+    "brand": "Corsair",
+    "category": "Keyboard",
+    "price": 6408,
+    "description": "Wireless connectivity and fast response for console & PC gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344031/Corsair_K95_RGB_Platinum_tg6kr2.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Logitech G Pro X",
+    "brand": "Logitech",
+    "category": "Keyboard",
+    "price": 3332,
+    "description": "Smooth tracking with adjustable DPI and vibrant RGB effects.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344030/Logitech_G_Pro_X_km1m8z.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Redragon K552 Kumara",
+    "brand": "Redragon",
+    "category": "Keyboard",
+    "price": 13491,
+    "description": "Smooth tracking with adjustable DPI and vibrant RGB effects.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344029/Redragon_K552_Kumara_kxrq1h.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "HyperX Alloy Origins",
+    "brand": "HyperX",
+    "category": "Keyboard",
+    "price": 4712,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344028/HyperX_Alloy_Origins_caouvz.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Logitech G502 Hero",
+    "brand": "Logitech",
+    "category": "Keyboard",
+    "price": 13283,
+    "description": "Compact design with tactile keys and vibrant RGB lighting for gamers.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344028/Logitech_G502_Hero_fzn720.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Razer DeathAdder V2",
+    "brand": "Razer",
+    "category": "Keyboard",
+    "price": 8855,
+    "description": "High refresh rate and low latency for smooth competitive gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344027/Razer_DeathAdder_V2_ikmwcv.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "SteelSeries Rival 3",
+    "brand": "SteelSeries",
+    "category": "Keyboard",
+    "price": 3959,
+    "description": "Compact design with tactile keys and vibrant RGB lighting for gamers.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344026/SteelSeries_Rival_3_egao1l.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Corsair Harpoon RGB",
+    "brand": "Corsair",
+    "category": "Keyboard",
+    "price": 13091,
+    "description": "Premium audio drivers for immersive surround sound gaming experience.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344026/Corsair_Harpoon_RGB_uip915.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Glorious Model O",
+    "brand": "Glorious",
+    "category": "Keyboard",
+    "price": 12476,
+    "description": "High DPI optical sensor and programmable buttons for fast gameplay.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344025/Glorious_Model_O_szkvni.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "ASUS TUF Gaming VG27AQ",
+    "brand": "ASUS",
+    "category": "Monitor",
+    "price": 8123,
+    "description": "Ergonomic design with lumbar support for long comfortable sessions.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344024/ASUS_TUF_Gaming_VG27AQ_sbsd2s.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Acer Nitro VG240YS",
+    "brand": "Acer",
+    "category": "Monitor",
+    "price": 11532,
+    "description": "Smooth tracking with adjustable DPI and vibrant RGB effects.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344024/Acer_Nitro_VG240YS_ar2bzy.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "MSI Optix MAG274QRF",
+    "brand": "MSI",
+    "category": "Monitor",
+    "price": 4763,
+    "description": "High DPI optical sensor and programmable buttons for fast gameplay.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344023/MSI_Optix_MAG274QRF_vzrln8.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "BenQ Zowie XL2546K",
+    "brand": "BenQ",
+    "category": "Monitor",
+    "price": 7550,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344023/BenQ_Zowie_XL2546K_ml1oit.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "LG UltraGear 27GN750",
+    "brand": "LG",
+    "category": "Monitor",
+    "price": 11739,
+    "description": "High DPI optical sensor and programmable buttons for fast gameplay.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344022/127738LG_UltraGear_27GN750_zl0v16.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Samsung Odyssey G5",
+    "brand": "Samsung",
+    "category": "Monitor",
+    "price": 13421,
+    "description": "Customizable buttons and ergonomic grip for precise in-game control.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344021/Samsung_Odyssey_G5_ldcmje.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Gigabyte G27Q",
+    "brand": "Gigabyte",
+    "category": "Monitor",
+    "price": 10753,
+    "description": "Customizable buttons and ergonomic grip for precise in-game control.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344021/Gigabyte_G27Q_axgjot.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Dell S2721HGF",
+    "brand": "Dell",
+    "category": "Monitor",
+    "price": 6731,
+    "description": "Ergonomic design with lumbar support for long comfortable sessions.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344020/Dell_S2721HGF_mhlsfl.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "ViewSonic XG2405",
+    "brand": "ViewSonic",
+    "category": "Monitor",
+    "price": 12464,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344019/ViewSonic_XG2405_nseaie.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Lenovo G27-20",
+    "brand": "Lenovo",
+    "category": "Monitor",
+    "price": 5165,
+    "description": "Wireless connectivity and fast response for console & PC gaming.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344019/Lenovo_G27-20_bzxshk.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Secretlab Titan Evo 2022",
+    "brand": "Secretlab",
+    "category": "Chair",
+    "price": 7733,
+    "description": "Sleek form with anti-ghosting keys and mechanical switch feel.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344018/Secretlab_Titan_Evo_2022_x9zp1z.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Green Soul Monster Ultimate",
+    "brand": "Green Soul",
+    "category": "Chair",
+    "price": 8745,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344017/Green_Soul_Monster_Ultimate_npjuvq.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Cellbell Transformer Series",
+    "brand": "Cellbell",
+    "category": "Chair",
+    "price": 4393,
+    "description": "Customizable buttons and ergonomic grip for precise in-game control.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344017/Cellbell_Transformer_Series_xi0cyr.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Savya Home Apex Crusader",
+    "brand": "Savya Home",
+    "category": "Chair",
+    "price": 2135,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344016/Savya_Home_Apex_Crusader_bhf2xn.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Nokaxus Gaming Chair",
+    "brand": "Nokaxus",
+    "category": "Chair",
+    "price": 10011,
+    "description": "Customizable buttons and ergonomic grip for precise in-game control.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344015/Nokaxus_Gaming_Chair_bnmx3o.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Baybee Drogo Ergonomic",
+    "brand": "Baybee",
+    "category": "Chair",
+    "price": 7626,
+    "description": "Ergonomic design with lumbar support for long comfortable sessions.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344015/Baybee_Drogo_Ergonomic_grdepi.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Casa Copenhagen GC01",
+    "brand": "Casa Copenhagen",
+    "category": "Chair",
+    "price": 3696,
+    "description": "Compact design with tactile keys and vibrant RGB lighting for gamers.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344014/Casa_Copenhagen_GC01_dnbclb.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Ant Esports WB-8077",
+    "brand": "Ant Esports",
+    "category": "Chair",
+    "price": 10115,
+    "description": "Premium audio drivers for immersive surround sound gaming experience.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344014/Ant_Esports_WB-8077_ac2msq.jpg",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "Dowinx LS-6689",
+    "brand": "Dowinx",
+    "category": "Chair",
+    "price": 5710,
+    "description": "Customizable buttons and ergonomic grip for precise in-game control.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344014/Dowinx_LS-6689_nq7wmu.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  },
+  {
+    "name": "GT-Racing ACE M1",
+    "brand": "GT-Racing",
+    "category": "Chair",
+    "price": 2591,
+    "description": "Wired gaming performance with durable build and comfortable earcups.",
+    "image": "https://res.cloudinary.com/dhbithwc8/image/upload/v1750344014/GT-Racing_ACE_M1_jdwye4.webp",
+    "createdAt": "2025-06-17T14:03:53.680211"
+  }
+]

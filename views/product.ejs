@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault - Premium Gaming Gear</title>
+    <link rel="stylesheet" href="/stylesheets/stylesproduct.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='/'">🎮 GameVault</div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/product" class="login-btn"><span>Products</span></a></li>
+                <li><a href="/profile" title="View Profile"><span><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/wishlist" title="View Wishlist"><span><i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/cart" title="View Cart"><span><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/users/logout" title="Logout"><span><i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color: #ffffff;"></i></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Flash Message -->
+     <% if (success.length > 0) { %>
+        <div class="gamevault-message success">
+            <span class="msg-icon">✅</span>
+            <span class="msg-text"><%= success %></span>
+            <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+        </div>
+    <% } %>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Open Sidebar">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                    <rect y="4" width="26" height="3.5" rx="1.5" fill="white"/>
+                    <rect y="11" width="26" height="3.5" rx="1.5" fill="white"/>
+                    <rect y="18" width="26" height="3.5" rx="1.5" fill="white"/>
+                </svg>
+            </button>
+            <h2 class="sidebar-title" onclick="showAllProducts()"> All Categories</h2>
+            
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(this)" data-category="Headset">
+                    <span class="category-icon">🎧</span>
+                    <span class="category-name">Gaming Headset</span>
+                    <span class="category-arrow">▶</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(this)" data-category="Controller">
+                    <span class="category-icon">🎮</span>
+                    <span class="category-name">Gaming Controllers</span>
+                    <span class="category-arrow">▶</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(this)" data-category="Keyboard">
+                    <span class="category-icon">⌨️</span>
+                    <span class="category-name">Keyboards & Mice</span>
+                    <span class="category-arrow">▶</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(this)" data-category="Monitor">
+                    <span class="category-icon">🖥️</span>
+                    <span class="category-name">Monitors</span>
+                    <span class="category-arrow">▶</span>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header" onclick="toggleCategory(this)" data-category="Chair">
+                    <span class="category-icon">🪑</span>
+                    <span class="category-name">Gaming Chairs</span>
+                    <span class="category-arrow">▶</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <h1>Premium Gaming Gear</h1>
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Search for gaming gear...">
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <% products.forEach(product => { %>
+                <!-- Product 1 -->
+                <div class="product-card" data-category="<%= product.category %>">
+                    <div class="product-image">
+                        <img src="<%= product.image %>" alt="<%= product.name %>">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title"><%= product.name%></h3>
+                        <div class="product-price">₹<%= product.price %></div>
+                        <p class="product-description"><%= product.description %></p>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="location.href='addtocart/<%= product.id %>'">Add to Cart</button>
+                            <button class="add-to-wishlist" onclick="location.href='addtowishlist/<%= product.id %>'" title="Add to Wishlist">
+                                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 17.5l-1.45-1.32C4.4 12.36 2 10.28 2 7.77 2 5.73 3.73 4 5.77 4c1.04 0 2.09.41 2.86 1.18C9.91 4.41 10.96 4 12 4c2.04 0 3.77 1.73 3.77 3.77 0 2.51-2.4 4.59-6.55 8.41L10 17.5z" fill="none" stroke="#ff006e" stroke-width="1.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+        </main>
+    </div>
+
+    <script src="/javascripts/jsofproduct.js"></script>
+    <script src="https://kit.fontawesome.com/7d02d13f43.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

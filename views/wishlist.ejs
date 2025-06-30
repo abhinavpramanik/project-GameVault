@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault - My Wishlist</title>
+    <link rel="stylesheet" href="/stylesheets/styleswishlist.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='/'">🎮 GameVault</div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/product" ><span>Products</span></a></li>
+                <li><a href="/profile" title="View Profile"><span><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/wishlist" class="login-btn" title="View Wishlist"><span><i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/cart"  title="View Cart"><span><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/users/logout" title="Logout"><span><i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color: #ffffff;"></i></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Flash Message -->
+        <% if (success.length > 0) { %>
+            <div class="gamevault-message error">
+                <span class="msg-icon">❌</span>
+                <span class="msg-text"><%= success %></span>
+                <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+            </div>
+        <% } %>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="wishlist-header">
+            <h1 class="wishlist-title">💝 My Wishlist</h1>
+            <p class="wishlist-subtitle">Your dream gaming setup awaits</p>
+        </div>
+
+        <!-- Wishlist Grid -->
+        <div class="wishlist-grid" id="wishlistGrid">
+            <% if(wishlist.length === 0){ %>
+                    <div class="empty-cart">
+                        <h2>Your Wishlist is empty</h2>
+                        <p>Add some amazing gaming gear to get started!</p>
+                        <a href="/product" class="continue-shopping">Go Back To Shopping</a>
+                    </div>
+            <% } %> 
+            <% wishlist.forEach(item => { %>
+                <!-- Wishlist Item 6 -->
+                <div class="wishlist-item" data-category="furniture" data-price="399.99" data-rating="4.4">
+                <div class="item-image">
+                    <img class="item-icon" src="<%= item.image %>" alt="<%= item.name %>">
+                    <button class="heart-btn loved" onclick="toggleWishlist(this)">❤️</button>
+                </div>
+                <div class="item-info">
+                    <div class="item-category"><%= item.category %></div>
+                    <div class="item-name"><%= item.name %></div>
+                    <div class="item-price">
+                        <span class="current-price">₹<%= item.price %></span>
+                    </div>
+                    <div class="item-availability in-stock">✅ In Stock</div>
+                    <div class="item-actions">
+                        <button class="add-to-cart-btn" onclick="location.href='addtocart/<%= item.id %>'">Add to Cart</button>
+                        <button class="remove-btn" onclick="location.href='deletefromwishlist/<%= item.id %>'">🗑️</button>
+                    </div>
+                </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>    
+        <script src="/javascripts/jsofwishlist.js"></script>
+        <script src="https://kit.fontawesome.com/7d02d13f43.js" crossorigin="anonymous"></script>
+    </body>        

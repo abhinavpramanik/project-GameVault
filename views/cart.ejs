@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault - Shopping Cart</title>
+    <link rel="stylesheet" href="/stylesheets/stylescart.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='/'">🎮 GameVault</div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/product" ><span>Products</span></a></li>
+                <li><a href="/profile" title="View Profile"><span><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/wishlist" title="View Wishlist"><span><i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/cart" class="login-btn" title="View Cart"><span><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/users/logout" title="Logout"><span><i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color: #ffffff;"></i></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Flash Message -->
+        <% if (success.length > 0) { %>
+            <div class="gamevault-message error">
+                <span class="msg-icon">❌</span>
+                <span class="msg-text"><%= success %></span>
+                <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+            </div>
+        <% } %>    
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="cart-header">
+            <h1 class="cart-title">Shopping Cart</h1>
+            <p class="cart-subtitle">Hey! <%= user.fullname%> ,Review your gaming gear before checkout</p>
+        </div>
+
+        <div class="cart-layout">
+            <!-- Cart Items Section -->
+            <div class="cart-items" id="cartItems">
+                <% if(cart.length === 0){ %>
+                    <div class="empty-cart">
+                        <div class="empty-cart-icon">🛒</div>
+                        <h2>Your cart is empty</h2>
+                        <p>Add some amazing gaming gear to get started!</p>
+                        <a href="/product" class="continue-shopping">Continue Shopping</a>
+                    </div>
+                <% } %>    
+                <% cart.forEach(item => { %>
+                <!-- Cart Item 1 -->
+                <div class="cart-item" data-price="<%= item.price %>">
+                    <div class="item-image">
+                        <img src="<%= item.image %>" alt="<%= item.name %>" >
+                    </div>
+                    <div class="item-details">
+                        <div class="item-name"><%= item.name %></div>
+                        <div class="item-specs"><%= item.category %></div>
+                        <div class="item-price">₹<%= item.price %></div>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                        <span class="quantity-display">1</span>
+                        <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                    </div>
+                    <button class="delete-btn" onclick="location.href='deletefromcart/<%= item.id %>'">🗑️ Remove</button>
+                </div>
+                <% }); %>
+
+            </div>
+
+            <!-- Fixed Checkout Summary -->
+            <div class="checkout-summary">
+                <h2 class="summary-title">Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal</span>
+                    <span class="summary-value" id="subtotal">₹<%= subtotal %></span>
+                </div>
+                
+                <div class="summary-row">
+                    <span class="summary-label">Platform Fee</span>
+                    <span class="summary-value" id="platformFee">₹<%= platformFee %></span>
+                </div>
+                
+                <div class="summary-row">
+                    <span class="summary-label">Delivery Fee</span>
+                    <span class="summary-value" id="deliveryFee">₹<%= deliveryFee %></span>
+                </div>
+                
+                <div class="summary-row total-row">
+                    <span class="summary-label">Total</span>
+                    <span class="summary-value" id="total">₹<%= total %></span>
+                </div>
+                
+                <button class="checkout-btn" onclick="proceedToCheckout()">
+                    🚀 Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascripts/jsofcart.js"></script>
+    <script src="https://kit.fontawesome.com/7d02d13f43.js" crossorigin="anonymous"></script>
+</body>
+</html>

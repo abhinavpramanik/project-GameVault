@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - GameVault</title>
+    <link rel="stylesheet" href="/stylesheets/stylesprofile.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='/'">🎮 GameVault</div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/product" ><span>Products</span></a></li>
+                <li><a href="/profile" class="login-btn" title="View Profile"><span><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/wishlist" title="View Wishlist"><span><i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/cart" title="View Cart"><span><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></span></a></li>
+                <li><a href="/users/logout" title="Logout"><span><i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color: #ffffff;"></i></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-picture-section">
+                    <img src="<%= source %>" 
+                         alt="Profile Picture" 
+                         class="profile-picture" 
+                         id="profileImage"
+                         onclick="openImageModal()">
+                    <button class="btn btn-secondary" onclick="openImageModal()">Change Photo</button>
+                </div>
+                
+                <div class="profile-info">
+                    <h1><%=user.fullname %></h1>
+                    <p class="email"><%= user.email %></p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <div class="stat-number"><%=user.cart.length %></div>
+                            <div class="stat-label">Orders</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number"><%=user.wishlist.length %></div>
+                            <div class="stat-label">Wishlisted</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">Active</div>
+                            <div class="stat-label">Status</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Flash Message -->
+        <% if (success.length > 0) { %>
+            <div class="gamevault-message success">
+                <span class="msg-icon">✅</span>
+                <span class="msg-text"><%= success %></span>
+                <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+            </div>
+        <% } %>
+        <% if (error.length > 0) { %>
+            <div class="gamevault-message error">
+                <span class="msg-icon">⚠️</span>
+                <span class="msg-text"><%= error %></span>
+                <span class="msg-close" onclick="this.parentElement.style.display='none';">&times;</span>
+            </div>
+        <% } %>
+        <div class="profile-form">
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <form action="/profile/update" method="post">
+                    <div class="form-group">
+                        <label for="fullName">Name</label>
+                        <input type="text" name="fullName" id="fullName" value="<%= user.fullname %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" value="<%= user.email %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone no.</label>
+                        <input type="tel" name="phone" id="phone" value="<%= user.contact %>">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+                
+            </div>
+
+            <div class="form-section">
+                <h3>Gaming Info</h3>
+                <div class="form-group">
+                    <label for="favoriteGenre">Favorite Games</label>
+                    <input type="text" id="favoriteGenre" value="FPS, RPG, Strategy">
+                </div>
+                <div class="form-group">
+                    <label for="platform">Gaming Platform</label>
+                    <input type="text" id="platform" value="PC, PlayStation 5">
+                </div>
+                <div class="form-group">
+                    <label for="currentGame">Currently Playing</label>
+                    <input type="text" id="currentGame" value="Cyberpunk 2077">
+                </div>
+                <button class="btn btn-primary">Update Info</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Image Upload Modal -->
+    <div id="imageModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Update Profile Picture</h3>
+                <button class="close-btn" onclick="closeImageModal()">&times;</button>
+            </div>
+            <form action="/profile/picture/update" method="POST" enctype="multipart/form-data">
+                <input type="file" id="imageUpload" name="profilepicture" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                <label for="imageUpload" class="file-upload-btn">Choose Image</label>
+            
+                <img id="imagePreview" class="hidden">
+            
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" onclick="closeImageModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary" onclick="">Save</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="/javascripts/jsofprofile.js"></script>
+    <script src="https://kit.fontawesome.com/7d02d13f43.js" crossorigin="anonymous"></script>
+</body>
+</html>
