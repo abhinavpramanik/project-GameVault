@@ -4,7 +4,7 @@ const config = require('config');
 const dbgr = require('debug')('devlopment:mongoose');
 
 mongoose
-.connect(`${config.get("MONGO_URI")}/gamevaultdatabase`)
+.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
     dbgr('MongoDB connected')
 })
