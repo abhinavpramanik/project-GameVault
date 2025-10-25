@@ -18,6 +18,8 @@ router.get('/login', (req, res) => {
 router.get('/product', isLoggedIn,async (req, res) => {
     let products = await productsModel.find();
     let success= req.flash('success');
+
+    console.log(products);
     res.render('product', { products,success });
     
 });
