@@ -1,3 +1,4 @@
 {
-    "MONGO_URI": "mongodb://localhost:27017"
+
+     "MONGO_URI": "mongodb+srv://okayericsmith_db_user:ericsmith007@aichatbot.n0czuoj.mongodb.net"
 }
