@@ -31,4 +31,6 @@ app.use('/owners', ownersRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 
+// console.log(process.env.RAZORPAY_KEY_ID);
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
