@@ -15,13 +15,21 @@ router.get('/login', (req, res) => {
     res.render('login', { error, success });
 });
 
-router.get('/product', isLoggedIn,async (req, res) => {
-    let products = await productsModel.find();
-    let success= req.flash('success');
-
-    console.log(products);
-    res.render('product', { products,success });
-    
+router.get('/product', isLoggedIn, async (req, res) => {
+    try {
+        let products = await productsModel.find({});
+        let success = req.flash('success');
+        
+        if (!products) {
+            products = [];
+        }
+        
+        res.render('product', { products, success });
+    } catch (error) {
+        console.error('Error fetching products:', error);
+        req.flash('error', 'Unable to load products');
+        res.render('product', { products: [], success: [], error: 'Unable to load products' });
+    }
 });
 
 router.get('/addtocart/:productid',isLoggedIn, async (req, res) => {
